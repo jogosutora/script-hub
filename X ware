@@ -33,5 +33,16 @@ Section:NewButton("Uranium Hub", "Top Tier", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
 end)
 
+local ArsenalTab = Window:NewTab("Arsenal")
+local SecondTabSection = ArsenalTab:NewSection("2nd Tab")
+
+SecondTabSection:NewButton("Zen Hub", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader"))()
+end)
+
+SecondTabSection:NewButton("Godmode", "Never die!", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Arsenal-Godmode-4604"))()
+end)
+
 Window:Ready()
 Window:MoveTo(game:GetService("CoreGui"))
