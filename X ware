@@ -1,0 +1,37 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local Window = Library.CreateLib("X-Ware (Beta)", "Serpent")
+
+local Tab = Window:NewTab("Blox Fruits")
+local Section = Tab:NewSection("Best")
+
+Section:NewButton("Zaque Hub", "Executor", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-ZaqueHub-9508"))()
+end)
+
+Section:NewButton("Domadic Hub", "Domadic hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+end)
+
+Section:NewButton("Sonic Hub", "Sonic Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))()
+end)
+
+Section:NewButton("Pado Hub", "Really good", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
+end)
+
+Section:NewButton("Hoho Hub", "top 2", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+Section:NewButton("Zen Hub", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))()
+end)
+
+Section:NewButton("Uranium Hub", "Top Tier", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
+end)
+
+Window:Ready()
+Window:MoveTo(game:GetService("CoreGui"))
