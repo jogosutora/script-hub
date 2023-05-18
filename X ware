@@ -33,6 +33,10 @@ Section:NewButton("Uranium Hub", "Top Tier", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
 end)
 
+Section:NewButton("Sword Dealer+Hop", "Finds Server with sword dealer", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/Free/AutoSwordHop.lua"))()
+end)
+
 local ArsenalTab = Window:NewTab("Arsenal")
 local SecondTabSection = ArsenalTab:NewSection("2nd Tab")
 
