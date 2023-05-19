@@ -52,5 +52,16 @@ SecondTabSection:NewButton("Godmode", "Never die!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Arsenal-Godmode-4604"))()
 end)
 
+local Universal = Window:NewTab("Universal")
+local UniSection = Universal:NewSection("Currently 2 Scripts")
+
+UniSection:NewButton("Infinite Yield"), "45% Visual", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Infinite-Yield_500"))()
+end)
+
+UniSection:NewButton("Fly GUI v3"), "Fly for Mobile", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
+end)
+
 Window:Ready()
 Window:MoveTo(game:GetService("CoreGui"))
