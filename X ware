@@ -1,16 +1,12 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
-local Window = Library.CreateLib("X-Ware | UPDATE", "BloodTheme")
+local Window = Library.CreateLib("X-Ware (Beta)", "BloodTheme")
 
 local Tab = Window:NewTab("Blox Fruits")
-local Section = Tab:NewSection("All scripts")
+local Section = Tab:NewSection("Best")
 
 Section:NewButton("Zaque Hub", "Executor", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-ZaqueHub-9508"))()
-end)
-
-Section:NewButton("Neva Hub (Bug)", "Kinda patched", function()
-    loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-Neva-Hub-9912"))()
 end)
 
 Section:NewButton("Domadic Hub", "Domadic hub", function()
@@ -37,7 +33,13 @@ Section:NewButton("Uranium Hub", "Top Tier", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
 end)
 
-Section:NewButton("Sword Dealer+Hop", "Finds Server with sword dealer", function()
+Section:NewButton("Neva hub", "Some bugs lol", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-Neva-Hub-9912"))()
+end)
+
+local ManualSection = Tab:NewSection("Manual")
+
+ManualSection:NewButton("Sword Dealer+Hop", "Finds Server with sword dealer", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/Free/AutoSwordHop.lua"))()
 end)
 
@@ -52,14 +54,35 @@ SecondTabSection:NewButton("Godmode", "Never die!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Arsenal-Godmode-4604"))()
 end)
 
-local Universal = Window:NewTab("Universal")
-local UniSection = Universal:NewSection("Currently 2 Scripts")
+SecondTabSection:NewToggle("Bypass Anticheat", "Beta", function(state)
+    if state then
+        -- AC bypass enabled
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "Anticheat Disabled",
+            Text = "May not work on most executors!",
+            Duration = 5
+        })
+    else
+        -- AC bypass disabled
+        game.StarterGui:SetCore("SendNotification", {
+            Title = "ERROR",
+            Text = "Rejoin to Unbypass",
+            Duration = 5
+        })
+    end
+end)
 
-UniSection:NewButton("Infinite Yield"), "45% Visual", function()
+-- New "Universal" Tab
+local UniversalTab = Window:NewTab("Universal")
+local UniversalSection = UniversalTab:NewSection("Currently 2 scripts!")
+
+-- Button 1: Infinite Yield
+UniversalSection:NewButton("Infinite Yield", "45% VISUAL", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Infinite-Yield_500"))()
 end)
 
-UniSection:NewButton("Fly GUI v3"), "Fly for Mobile", function()
+-- Button 2: Fly Gui v3
+UniversalSection:NewButton("Fly Gui v3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
