@@ -3,7 +3,7 @@ local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 local Window = Library.CreateLib("X-Ware | Update", "BloodTheme")
 
 local Tab = Window:NewTab("Blox Fruits")
-local Section = Tab:NewSection("Farming (8 Scripts")
+local Section = Tab:NewSection("Farming (8 Scripts)")
 
 Section:NewButton("Zaque Hub", "Executor", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-ZaqueHub-9508"))()
