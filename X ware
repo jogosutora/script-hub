@@ -95,5 +95,12 @@ UniversalSection:NewButton("Fly Gui v3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
+local mimic = Window:NewTab("The Mimic")
+local counter = mimic:NewSection("Auto Wins (1 Script)")
+
+counter:NewButton("Script by TTJY", "New", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
+end)
+
 Window:Ready()
 Window:MoveTo(game:GetService("CoreGui"))
