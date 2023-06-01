@@ -4,6 +4,8 @@ local Window = Library.CreateLib("B Genesis V2", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
+local updateText = Maintab:NewSection("Last Updated 06/02/23")
+local versionText = Maintab:NewSection("Version:2013H")
 
 local Tab = Window:NewTab("Blox Fruits")
 local Section = Tab:NewSection("Farming (9 Scripts)")
