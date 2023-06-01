@@ -21,32 +21,24 @@ Section:NewButton("Pado Hub", "Really good", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
 end)
 
-Section:NewButton("Hoho Hub", "TOP 1,CONTAINS KEY", function()
+Section:NewButton("Hoho Hub", "top 2", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end)
 
-Section:NewButton("Zen Hub", "Contains Key", function()
+Section:NewButton("Zen Hub", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader", true))()
-end)
-
-Section:NewButton("Blck Hub, "Contains Key", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
 end)
 
 Section:NewButton("Uranium Hub", "Top Tier", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
 end)
 
-Section:NewButton("Halo x Hub", "Best autofarms! No Key", function()
-    loadstring(game:HttpGet'https://raw.githubusercontent.com/HALOxHUB/ScriptLoader/main/Loader.lua')()
-end)
-
-Section:NewButton("CFrame Hub 1", "No Key,PC version", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CFrame3310/CFrameHub/main/BloxFruit.lua"))()
-end)
-
 Section:NewButton("Neva hub", "Some bugs lol", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-Neva-Hub-9912"))()
+end)
+
+Section:NewButton("Blck Hub", "Keyless", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
 end)
 
 local ManualSection = Tab:NewSection("Manual (1 Script)")
