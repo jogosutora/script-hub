@@ -2,6 +2,9 @@ local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
 local Window = Library.CreateLib("B Genesis V2", "BloodTheme")
 
+local Maintab = Window:NewTab("Main")
+local creditsText = Maintab:NewSection("Created by HX21#6558")
+
 local Tab = Window:NewTab("Blox Fruits")
 local Section = Tab:NewSection("Farming (9 Scripts)")
 
