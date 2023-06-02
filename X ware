@@ -5,7 +5,7 @@ local Window = Library.CreateLib("B Genesis V2", "BloodTheme")
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
 local updateText = Maintab:NewSection("Last Updated 06/02/23")
-local versionText = Maintab:NewSection("Version:2017R")
+local versionText = Maintab:NewSection("Version:2015X")
 
 local Tab = Window:NewTab("Blox Fruits")
 local Section = Tab:NewSection("Farming (10 Scripts)")
@@ -48,6 +48,14 @@ end)
 
 Section:NewButton("Halo X Hub", "Keyless", function()
     loadstring(game:HttpGet'https://raw.githubusercontent.com/HALOxHUB/ScriptLoader/main/Loader.lua')()
+end)
+
+Section:NewButton("Coca Hub", "OP,Keyless", function()
+    loadstring(game:HttpGet("https://codeberg.org/CokkaHub/Loadstring/raw/branch/main/CokkaHub.lua"))()
+end)
+
+Section:NewButton("Chiba Hub", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KindIhave/ChibaHuB/main/Chiba-BF.txt'))()
 end)
 
 local ManualSection = Tab:NewSection("Manual (1 Script)")
@@ -99,12 +107,12 @@ UniversalSection:NewButton("Infinite Yield", "45% VISUAL", function()
 end)
 
 -- Button 2: Fly Gui v3
-UniversalSection:NewButton("Fly Gui v3", "Fly for Mobile!", function()
+UniversalSection:NewButton("Fly Gui V3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
 local mimic = Window:NewTab("The Mimic")
-local counter = mimic:NewSection("Auto Wins (1 Script)")
+local counter = mimic:NewSection("Auto Wins (2 Scripts)")
 
 counter:NewButton("Script by TTJY", "New", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
