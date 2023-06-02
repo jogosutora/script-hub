@@ -8,7 +8,7 @@ local updateText = Maintab:NewSection("Last Updated 06/02/23")
 local versionText = Maintab:NewSection("Version:2015X")
 
 local Tab = Window:NewTab("Blox Fruits")
-local Section = Tab:NewSection("Farming (10 Scripts)")
+local Section = Tab:NewSection("Farming (12 Scripts)")
 
 Section:NewButton("Zaque Hub", "Op", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-ZaqueHub-9508"))()
