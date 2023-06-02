@@ -5,10 +5,10 @@ local Window = Library.CreateLib("B Genesis V2", "BloodTheme")
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
 local updateText = Maintab:NewSection("Last Updated 06/02/23")
-local versionText = Maintab:NewSection("Version:2013H")
+local versionText = Maintab:NewSection("Version:2017R")
 
 local Tab = Window:NewTab("Blox Fruits")
-local Section = Tab:NewSection("Farming (9 Scripts)")
+local Section = Tab:NewSection("Farming (10 Scripts)")
 
 Section:NewButton("Zaque Hub", "Op", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-ZaqueHub-9508"))()
@@ -46,6 +46,10 @@ Section:NewButton("Blck Hub", "Keyless", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
 end)
 
+Section:NewButton("Halo X Hub", "Keyless", function()
+    loadstring(game:HttpGet'https://raw.githubusercontent.com/HALOxHUB/ScriptLoader/main/Loader.lua')()
+end)
+
 local ManualSection = Tab:NewSection("Manual (1 Script)")
 
 ManualSection:NewButton("Sword Dealer+Hop", "Finding Server with sword dealer", function()
@@ -53,7 +57,7 @@ ManualSection:NewButton("Sword Dealer+Hop", "Finding Server with sword dealer", 
 end)
 
 local ArsenalTab = Window:NewTab("Arsenal")
-local SecondTabSection = ArsenalTab:NewSection("OP Scripts (2 Scripts)")
+local SecondTabSection = ArsenalTab:NewSection("OP Scripts (4 Scripts)")
 
 SecondTabSection:NewButton("Zen Hub", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader"))()
