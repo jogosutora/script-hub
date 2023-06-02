@@ -63,6 +63,10 @@ SecondTabSection:NewButton("Godmode", "Never die!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Arsenal-Godmode-4604"))()
 end)
 
+SecondTabSection:NewButton("Pwners V2", "Aimlock+Esp etc.", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))() 
+end)
+
 SecondTabSection:NewToggle("Bypass Anticheat", "Beta", function(state)
     if state then
         -- AC bypass enabled
