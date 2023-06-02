@@ -110,5 +110,9 @@ counter:NewButton("Script by TTJY", "New", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
 end)
 
+counter:NewButton("NowMon x KTollT", "Old op script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/NewGUI/main/README.md'))()
+end)
+
 Window:Ready()
 Window:MoveTo(game:GetService("CoreGui"))
