@@ -10,15 +10,15 @@ local versionText = Maintab:NewSection("Version:2011P")
 local Tab = Window:NewTab("Blox Fruits")
 local Section = Tab:NewSection("Farming (15 Scripts)")
 
-Section:NewButton("Zaque Hub", "Op", function()
+Section:NewButton("Zaque Hub", "can buy perm key or get temporary", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-ZaqueHub-9508"))()
 end)
 
-Section:NewButton("Domadic Hub", "Domadic hub", function()
+Section:NewButton("Domadic Hub", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
 end)
 
-Section:NewButton("Sonic Hub", "Sonic Hub", function()
+Section:NewButton("Sonic Hub", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/Protected-25.lua"))()
 end)
 
@@ -26,7 +26,7 @@ Section:NewButton("Pado Hub", "Really good", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
 end)
 
-Section:NewButton("Hoho Hub", "top 2", function()
+Section:NewButton("Hoho Hub", "", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end)
 
@@ -66,7 +66,7 @@ Section:NewButton("Speed Hub X", "", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
 end)
 
-Section:NewButton("MADOX", "", function()
+Section:NewButton("t7fghr", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/minded102/dokinbog/main/README.md", true))()
 end)
 
@@ -126,7 +126,7 @@ end)
 local mimic = Window:NewTab("The Mimic")
 local counter = mimic:NewSection("Auto Wins (2 Scripts)")
 
-counter:NewButton("Script by TTJY", "New", function()
+counter:NewButton("Script by TTJY (Patched)", "for Mobile", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
 end)
 
