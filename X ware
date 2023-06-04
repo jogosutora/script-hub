@@ -4,11 +4,11 @@ local Window = Library.CreateLib("B Genesis V2", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
-local updateText = Maintab:NewSection("Last Updated 06/03/23")
-local versionText = Maintab:NewSection("Version:2020C")
+local updateText = Maintab:NewSection("Last Updated 06/05/23")
+local versionText = Maintab:NewSection("Version:2011P")
 
 local Tab = Window:NewTab("Blox Fruits")
-local Section = Tab:NewSection("Farming (13 Scripts)")
+local Section = Tab:NewSection("Farming (15 Scripts)")
 
 Section:NewButton("Zaque Hub", "Op", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-ZaqueHub-9508"))()
@@ -60,6 +60,14 @@ end)
 
 Section:NewButton("Resin Hub", "Mastery farm", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/sasaff94/Reskin-Hub/main/README.md"))()
+end)
+
+Section:NewButton("Speed Hub X", "", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
+end)
+
+Section:NewButton("MADOX", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/minded102/dokinbog/main/README.md", true))()
 end)
 
 local ManualSection = Tab:NewSection("Manual (1 Script)")
