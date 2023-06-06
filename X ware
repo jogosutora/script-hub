@@ -4,8 +4,15 @@ local Window = Library.CreateLib("B Genesis V2", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
-local updateText = Maintab:NewSection("Last Updated 06/05/23")
+local updateText = Maintab:NewSection("Last Updated 06/06/23")
 local versionText = Maintab:NewSection("Version:2011P")
+
+local ms2 = Window:NewTab("Mining sim 2")
+local mscounter = ms2:NewSection("Autofarm GUI (1 Scripts)")
+
+mscounter:NewButton("Zeerox GUI", "#1 autofarm gui", function()
+    loadstring(game:HttpGet'https://github.com/RunDTM/miningsim2/raw/main/script.lua')()
+end)
 
 local Tab = Window:NewTab("Blox Fruits")
 local Section = Tab:NewSection("Farming (18 Scripts)")
@@ -66,7 +73,7 @@ Section:NewButton("Speed Hub X", "", function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
 end)
 
-Section:NewButton("t7fghr", "", function()
+Section:NewButton("t7gfy", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/minded102/dokinbog/main/README.md", true))()
 end)
 
