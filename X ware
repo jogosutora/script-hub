@@ -7,11 +7,11 @@ local creditsText = Maintab:NewSection("Created by HX21#6558")
 local updateText = Maintab:NewSection("Last Updated 06/06/23")
 local versionText = Maintab:NewSection("Version:2011P")
 
-local ms2 = Window:NewTab("Mining sim 2")
-local mscounter = ms2:NewSection("Autofarm GUI (1 Scripts)")
+local evd = Window:NewTab("Evade")
+local evcounter = evd:NewSection("Autofarm GUI (1 Scripts)")
 
-mscounter:NewButton("Zeerox GUI", "#1 autofarm gui", function()
-    loadstring(game:HttpGet'https://github.com/RunDTM/miningsim2/raw/main/script.lua')()
+evcounter:NewButton("PEPESGH1", "#1 autofarm gui", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PepesGH1/stuff/main/evadeloader.lua"))()
 end)
 
 local Tab = Window:NewTab("Blox Fruits")
