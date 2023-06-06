@@ -8,7 +8,7 @@ local updateText = Maintab:NewSection("Last Updated 06/05/23")
 local versionText = Maintab:NewSection("Version:2011P")
 
 local Tab = Window:NewTab("Blox Fruits")
-local Section = Tab:NewSection("Farming (15 Scripts)")
+local Section = Tab:NewSection("Farming (18 Scripts)")
 
 Section:NewButton("Zaque Hub", "can buy perm key or get temporary", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/UPDATE-16-Blox-Fruits-ZaqueHub-9508"))()
@@ -70,6 +70,18 @@ Section:NewButton("t7fghr", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/minded102/dokinbog/main/README.md", true))()
 end)
 
+Section:NewButton("Nexuz Hub", "", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/NexuzHub/Main-/main/Script"))()
+end)
+
+Section:NewButton("Sazx Hub", "NO KEY,fast attack", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MkoriKunG/Sazxhubnew/main/Protected.lua_4.txt"))()
+end)
+
+Section:NewButton("HoHo V3", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/thieunangquahuhuv3.lua'))()
+end)
+
 local ManualSection = Tab:NewSection("Manual (1 Script)")
 
 ManualSection:NewButton("Sword Dealer+Hop", "Finding Server with sword dealer", function()
@@ -87,7 +99,7 @@ SecondTabSection:NewButton("Godmode", "Never die!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Arsenal-Godmode-4604"))()
 end)
 
-SecondTabSection:NewButton("Pwners V2", "Aimlock+Esp etc.", function()
+SecondTabSection:NewButton("Pwners V3", "Aimlock+Esp etc.", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))() 
 end)
 
