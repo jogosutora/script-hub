@@ -1,11 +1,15 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
-local Window = Library.CreateLib("B Genesis V2", "BloodTheme")
+local Window = Library.CreateLib("X WARE 1.0", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
 local updateText = Maintab:NewSection("Last Updated 06/06/23")
 local versionText = Maintab:NewSection("Version:2011P")
+
+versionText:NewButton("B Genesis 1.2", "10+ Games Supported", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
+end)
 
 local evd = Window:NewTab("Evade")
 local evcounter = evd:NewSection("Autofarm GUI (1 Scripts)")
@@ -89,10 +93,14 @@ Section:NewButton("HoHo V3", "", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/thieunangquahuhuv3.lua'))()
 end)
 
-local ManualSection = Tab:NewSection("Manual (1 Script)")
+local ManualSection = Tab:NewSection("Manual/PVP (2 Scripts)")
 
 ManualSection:NewButton("Sword Dealer+Hop", "Finding Server with sword dealer", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/Free/AutoSwordHop.lua"))()
+end)
+
+ManualSection:NewButton("Thunder Z Aimbot", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
 end)
 
 local ArsenalTab = Window:NewTab("Arsenal")
