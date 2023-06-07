@@ -4,11 +4,15 @@ local Window = Library.CreateLib("X WARE 1.0", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
-local updateText = Maintab:NewSection("Last Updated 06/06/23")
-local versionText = Maintab:NewSection("Version:2011P")
+local updateText = Maintab:NewSection("Last Updated 06/07/23")
+local versionText = Maintab:NewSection("Version:1.0 Beta")
 
-versionText:NewButton("B Genesis 1.2", "10+ Games Supported", function()
+versionText:NewButton("B Genesis 1.2", "19+ Games Supported", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
+end)
+
+versionText:NewButton("Nukevscity Loader", "100+ Games Supported", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader", true))()                                               --this script has NO key!              THIS HUB CONTAINS NEARLY ALL SCR
 end)
 
 local evd = Window:NewTab("Evade")
