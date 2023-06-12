@@ -1,11 +1,11 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
-local Window = Library.CreateLib("X WARE 1.0", "BloodTheme")
+local Window = Library.CreateLib("X-Ware V1", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
-local updateText = Maintab:NewSection("Last Updated 06/07/23")
-local versionText = Maintab:NewSection("Version:1.0 Beta")
+local updateText = Maintab:NewSection("Last Updated 06/13/23")
+local versionText = Maintab:NewSection("Version:1.1 Beta")
 
 versionText:NewButton("B Genesis 1.2", "19+ Games Supported", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
@@ -105,6 +105,10 @@ end)
 
 ManualSection:NewButton("Thunder Z Aimbot", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ThunderZ-HUB/HUB/main/Aimbot"))()
+end)
+
+ManualSection:NewButton("Crimson Hub", "", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Crimson-HUB-7-Games-UPDATED-5939"))()
 end)
 
 local ArsenalTab = Window:NewTab("Arsenal")
