@@ -4,8 +4,8 @@ local Window = Library.CreateLib("X-Ware V1", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
-local updateText = Maintab:NewSection("Last Updated 06/13/23")
-local versionText = Maintab:NewSection("Version:1.1 Beta")
+local updateText = Maintab:NewSection("Last Updated 06/14/23")
+local versionText = Maintab:NewSection("Version:1.1")
 
 versionText:NewButton("B Genesis 1.2", "19+ Games Supported", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
@@ -97,7 +97,7 @@ Section:NewButton("HoHo V3", "", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/thieunangquahuhuv3.lua'))()
 end)
 
-local ManualSection = Tab:NewSection("Manual/PVP (2 Scripts)")
+local ManualSection = Tab:NewSection("Manual/PVP (3 Scripts)")
 
 ManualSection:NewButton("Sword Dealer+Hop", "Finding Server with sword dealer", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/vinhuchi/rblx/main/W-azure/Free/AutoSwordHop.lua"))()
@@ -161,12 +161,23 @@ end)
 local mimic = Window:NewTab("The Mimic")
 local counter = mimic:NewSection("Auto Wins (2 Scripts)")
 
-counter:NewButton("Script by TTJY (Patched)", "for Mobile", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/obfloadstringmainmimic/main/README.md", true))()
+counter:NewButton("Script by TTJY", "for Mobile and PC", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ttjy9808/THEMIMICNEWMOBILEUINOTBETA/main/README.md"))()
 end)
 
 counter:NewButton("NowMon x KTollT", "Old op script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/NewGUI/main/README.md'))()
+end)
+
+local resturant = Window:NewTab("My Resturant")
+local resturantsec = resturant:NewSection("Autofarming (2 Scripts)")
+
+resturantsec:NewButton("Rafa Hub", "Best autofarming!!", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/mr.lua"))()
+end)
+
+resturantsec:NewButton("Astro.Public", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Astro-Public/Astro.Public.MyResturant/main/SCRIPT", true))()
 end)
 
 Window:Ready()
