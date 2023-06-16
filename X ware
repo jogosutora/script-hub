@@ -158,8 +158,8 @@ UniversalSection:NewButton("Fly Gui V3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
-UniversalSection:NewButton("CFrame Viewer", "View your current cord.(s)", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/GdmzzrDz", true))()
+UniversalSection:NewButton("CFrame Viewer", "View your current coordinates", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/GdmzzrDz"))()
 end)
 
 UniversalSection:NewButton("Remote Spy, "Idk much abt it,lol", function()
