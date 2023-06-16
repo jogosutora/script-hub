@@ -158,6 +158,10 @@ UniversalSection:NewButton("Fly Gui V3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
+UniversalSection:NewButton("Remotespy", idk abt this", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
+end)
+
 local mimic = Window:NewTab("The Mimic")
 local counter = mimic:NewSection("Auto Wins (2 Scripts)")
 
