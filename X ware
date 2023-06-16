@@ -153,12 +153,11 @@ UniversalSection:NewButton("Infinite Yield", "45% VISUAL", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Infinite-Yield_500"))()
 end)
 
--- Button 2: Fly Gui v3
 UniversalSection:NewButton("Fly Gui V3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
-UniversalSection:NewButton("Remotespy", idk abt this", function()
+UniversalSection:NewButton("Remotespy", "idk abt this", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
 end)
 
