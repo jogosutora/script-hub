@@ -4,8 +4,8 @@ local Window = Library.CreateLib("X-Ware V1", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
-local updateText = Maintab:NewSection("Last Updated 06/14/23")
-local versionText = Maintab:NewSection("Version:1.1")
+local updateText = Maintab:NewSection("Last Updated 06/16/23")
+local versionText = Maintab:NewSection("Version:1.12")
 
 versionText:NewButton("B Genesis 1.2", "19+ Games Supported", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
@@ -178,6 +178,17 @@ end)
 
 resturantsec:NewButton("Astro.Public", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Astro-Public/Astro.Public.MyResturant/main/SCRIPT", true))()
+end)
+
+local psx = Window:NewTab("Pet Simulator X")
+local psxsec = psx:NewSection("AUTOFARM,TRACKERS (2 Scripts)")
+
+psxsec:NewButton("Milk up GUI", "7+ tabs,Lots of feature", function()
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a82cd5447cbbc4c7be0e8db405555787.lua"))()
+end)
+
+psxsec:NewButton("Blacktrap GUI", "Oftenly Updated,best autofarm", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
 end)
 
 Window:Ready()
