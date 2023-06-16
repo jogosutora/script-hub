@@ -158,12 +158,10 @@ UniversalSection:NewButton("Fly Gui V3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
--- Button 3:Cframe Viewer
 UniversalSection:NewButton("CFrame Viewer", "View your current cord.(s)", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/GdmzzrDz", true))()
 end)
 
--- Button 4:RSpy
 UniversalSection:NewButton("Remote Spy, "Idk much abt it,lol", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
 end)
