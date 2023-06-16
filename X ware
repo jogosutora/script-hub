@@ -157,7 +157,7 @@ UniversalSection:NewButton("Fly Gui V3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
-UniversalSection:NewButton("Remotespy", "idk abt this", function()
+UniversalSection:NewButton("RemoteSpy", "idk abt this", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
 end)
 
@@ -181,6 +181,10 @@ end)
 
 resturantsec:NewButton("Astro.Public", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Astro-Public/Astro.Public.MyResturant/main/SCRIPT", true))()
+end)
+
+resturantsec:NewButton("Teleport to shop", "", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-263.7252502441406, 1610.3702392578125, 548.1397094726562)
 end)
 
 local psx = Window:NewTab("Pet Simulator X")
