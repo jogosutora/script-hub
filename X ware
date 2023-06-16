@@ -146,7 +146,7 @@ end)
 
 -- New "Universal" Tab
 local UniversalTab = Window:NewTab("Universal")
-local UniversalSection = UniversalTab:NewSection("Works at any Game (4 Scripts)")
+local UniversalSection = UniversalTab:NewSection("Works at any Game (2 Scripts)")
 
 -- Button 1: Infinite Yield
 UniversalSection:NewButton("Infinite Yield", "45% VISUAL", function()
@@ -156,14 +156,6 @@ end)
 -- Button 2: Fly Gui v3
 UniversalSection:NewButton("Fly Gui V3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
-end)
-
-UniversalSection:NewButton("CFrame Viewer", "View your current coordinates", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/GdmzzrDz"))()
-end)
-
-UniversalSection:NewButton("Remote Spy, "Idk much abt it,lol", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
 end)
 
 local mimic = Window:NewTab("The Mimic")
