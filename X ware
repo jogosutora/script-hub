@@ -4,7 +4,7 @@ local Window = Library.CreateLib("X-Ware Beta", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
-local updateText = Maintab:NewSection("Last Updated 06/16/23")
+local updateText = Maintab:NewSection("Last Updated 06/17/23")
 local versionText = Maintab:NewSection("Version:1.13")
 
 versionText:NewButton("B Genesis 1.2", "19+ Games Supported", function()
@@ -16,7 +16,7 @@ versionText:NewButton("Nukevscity Loader", "100+ Games Supported", function()
 end)
 
 local evd = Window:NewTab("Evade")
-local evcounter = evd:NewSection("Autofarm GUI (1 Scripts)")
+local evcounter = evd:NewSection("Autofarm GUI (1 Script)")
 
 evcounter:NewButton("PEPESGH1", "#1 autofarm gui", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/PepesGH1/stuff/main/evadeloader.lua"))()
@@ -112,7 +112,7 @@ ManualSection:NewButton("Crimson Hub", "", function()
 end)
 
 local ArsenalTab = Window:NewTab("Arsenal")
-local SecondTabSection = ArsenalTab:NewSection("OP Scripts (4 Scripts)")
+local SecondTabSection = ArsenalTab:NewSection("OP Scripts (5 Scripts)")
 
 SecondTabSection:NewButton("Zen Hub", "", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Kaizenofficiall/ZenHub/main/Loader"))()
@@ -124,6 +124,10 @@ end)
 
 SecondTabSection:NewButton("Pwners V3", "Aimlock+Esp etc.", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"), true))() 
+end)
+
+SecondTabSection:NewButton("DarkRai GUI", "ESP,Aimlock,Hitbox,Gun Settings", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/arsenal-hub/main/Arsenal%20GamingScripter", true))()
 end)
 
 SecondTabSection:NewToggle("Bypass Anticheat", "Beta", function(state)
@@ -146,7 +150,7 @@ end)
 
 -- New "Universal" Tab
 local UniversalTab = Window:NewTab("Universal")
-local UniversalSection = UniversalTab:NewSection("Works at any Game (2 Scripts)")
+local UniversalSection = UniversalTab:NewSection("Works at any Game (3 Scripts)")
 
 -- Button 1: Infinite Yield
 UniversalSection:NewButton("Infinite Yield", "45% VISUAL", function()
@@ -157,7 +161,7 @@ UniversalSection:NewButton("Fly Gui V3", "Fly for Mobile!", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fly-GUI-V3-10610"))()
 end)
 
-UniversalSection:NewButton("RemoteSpy", "idk abt this", function()
+UniversalSection:NewButton("Simple Spy", "idk abt this", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/78n/SimpleSpy/main/SimpleSpySource.lua"))()
 end)
 
@@ -173,7 +177,7 @@ counter:NewButton("NowMon x KTollT", "Old op script", function()
 end)
 
 local resturant = Window:NewTab("My Resturant")
-local resturantsec = resturant:NewSection("Autofarming (2 Scripts)")
+local resturantsec = resturant:NewSection("Autofarming (2/3 Scripts)")
 
 resturantsec:NewButton("Rafa Hub", "Best autofarming!!", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafacasari/roblox-scripts/main/mr.lua"))()
