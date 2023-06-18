@@ -1,17 +1,17 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
-local Window = Library.CreateLib("X-Ware Beta", "BloodTheme")
+local Window = Library.CreateLib("Script Hub Beta", "BloodTheme")
 
 local Maintab = Window:NewTab("Main")
 local creditsText = Maintab:NewSection("Created by HX21#6558")
 local updateText = Maintab:NewSection("Last Updated 06/17/23")
 local versionText = Maintab:NewSection("Version:1.13")
 
-versionText:NewButton("B Genesis 1.2", "19+ Games Supported", function()
+versionText:NewButton("B Genesis 1.2", "13 Games Supported", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/raw-scriptpastebin/raw/main/B_Genesis'))()
 end)
 
-versionText:NewButton("Nukevscity Loader", "100+ Games Supported", function()
+versionText:NewButton("Nukevscity Loader", "50+ Games Supported", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/TheALLHACKLoader/main/NukeLoader", true))()                                               --this script has NO key!              THIS HUB CONTAINS NEARLY ALL SCR
 end)
 
@@ -203,7 +203,7 @@ psxsec:NewButton("Blacktrap GUI", "Oftenly Updated,best autofarm", function()
 end)
 
 local doors = Window:NewTab("Doors")
-local doorsec = doors:NewSection("Skip doors and Other Features (2 Scripts)")
+local doorsec = doors:NewSection("Skip doors and Other Features (3 Scripts)")
 
 doorsec:NewButton("Darkrai GUI", "Skip doors,Walkspeed,fb and others", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
@@ -211,6 +211,10 @@ end)
 
 doorsec:NewButton("King Hub", "Same like darkrai but no Skip doors", function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/R8QMbhzv')))()
+end)
+
+doorsec:NewButton("Premium Hub", "", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ExolutionProject/Scripts/main/ExolutionPremiumHub.lua'))()
 end)
 
 Window:Ready()
