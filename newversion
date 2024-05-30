@@ -1,0 +1,300 @@
+-- Load Fluent library and addons
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+
+-- Create AvX Script Executor window
+local Window = Fluent:CreateWindow({
+    Title = "Bloxy Hub",
+    SubTitle = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name, -- Set subtitle dynamically,
+    TabWidth = 140,
+    Size = UDim2.fromOffset(530, 310),
+    Acrylic = true,
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl
+})
+
+-- Add Blox Fruits Tab
+local BloxFruitsTab = Window:AddTab({ Title = "Blox Fruits", Icon = "swords" })
+
+-- Add sections for different categories
+local BestSection = BloxFruitsTab:AddSection("Best")
+local PopularSection = BloxFruitsTab:AddSection("Popular")
+
+-- Function to create buttons with a common structure
+local function createButton(section, title, description, callback)
+    section:AddButton({
+        Title = title,
+        Description = description,
+        Callback = callback
+    })
+end
+
+-- Best section buttons
+createButton(BestSection, "HoHo Hub V3", "Rating: 9.9/10 🎖", function()
+    _G.HohoVersion = "v3"
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+createButton(BestSection, "Pado Hub", "Rating: 7/10", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/REWzaKunGz1/premium/main/PadoHub'))()
+end)
+
+createButton(BestSection, "Raito Hub", "Rating: 7/10", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
+end)
+
+createButton(BestSection, "TSUO Hub", "Rating: 6.5/10", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
+end)
+
+-- Popular section buttons
+createButton(PopularSection, "REDz Hub", "Rating: 5.95/10", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+end)
+
+createButton(PopularSection, "MADOX Hub", "Rating: 5/10", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fiend1sh/FiendMain/main/MadoxHubKey", true))()
+end)
+
+createButton(PopularSection, "Speed Hub", "Rating: 6/10", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()
+end)
+
+createButton(PopularSection, "MTriet Hub", "Rating: 7/10", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+end)
+
+createButton(PopularSection, "Domadic Hub", "Rating: 6.9/10", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+end)
+
+createButton(PopularSection, "Vector Hub EN", "?", function()
+    _G.Mode = "English"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tuxoz/VectorHub/main/MBPC"))()
+end)
+
+createButton(PopularSection, "Apple Hub", "Rating:7.2/10 ", function()
+    getgenv().NgonNguScript = true
+    repeat task.wait() until game:IsLoaded()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ImTienNguyenZ/AppleHub/main/LoaderBF"))()
+end)
+
+-- Assuming 'Window' is the main Fluent window
+
+-- Add Humanoid Tab
+local HumanoidTab = Window:AddTab({ Title = "Humanoid", Icon = "person-standing" })
+
+-- Add sections for different features
+local MovementSection = HumanoidTab:AddSection("Movement")
+local ActionsSection = HumanoidTab:AddSection("Actions")
+
+-- Walkspeed Slider
+local WalkspeedSlider = MovementSection:AddSlider("Walkspeed", {
+    Title = "Walkspeed",
+    Description = "Adjust the character's walking speed",
+    Default = 16,
+    Min = 16,
+    Max = 95,
+    Rounding = 0,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").WalkSpeed = Value
+    end
+})
+
+-- JumpPower Slider
+local JumpPowerSlider = MovementSection:AddSlider("Jump Power", {
+    Title = "Jump Power",
+    Description = "Adjust the character's jump power",
+    Default = 50,
+    Min = 16,
+    Max = 250,
+    Rounding = 0,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid").JumpPower = Value
+    end
+})
+
+-- Sitting Toggle
+local SittingToggle = ActionsSection:AddToggle("Sitting", {
+    Title = "Sitting",
+    Default = false,
+    Callback = function()
+        local humanoid = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+        humanoid.Sit = not humanoid.Sit
+    end
+})
+
+-- Teleport CFrame Input
+local TeleportInput = ActionsSection:AddInput("Teleport CFrame", {
+    Title = "Teleport CFrame",
+    Default = "",
+    Placeholder = "Input CFrame as string",
+    Numeric = false,
+    Finished = true,
+    Callback = function(Value)
+        local humanoidRootPart = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if humanoidRootPart then
+            local success, result = pcall(function()
+                return loadstring("return " .. Value)()
+            end)
+
+            if success and typeof(result) == "CFrame" then
+                humanoidRootPart.CFrame = result
+            else
+                warn("Invalid CFrame input.")
+            end
+        end
+    end
+})
+
+-- Noclip Toggle
+local NoclipToggle = ActionsSection:AddToggle("Noclip", {
+    Title = "Noclip (50%)",
+    Default = false,
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+        local character = player.Character
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+        if Value then
+            player.CharacterAdded:Connect(function()
+                humanoid = character:WaitForChild("Humanoid")
+                humanoid:GetPropertyChangedSignal("Seated").Connect(function()
+                    if not humanoid.Seated then
+                        for _, part in pairs(character:GetDescendants()) do
+                            if part:IsA("BasePart") then
+                                part.CanCollide = false
+                            end
+                        end
+                    end
+                end)
+            end)
+        else
+            for _, part in pairs(character:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    part.CanCollide = true
+                end
+            end
+        end
+    end
+})
+
+-- Add a "Misc" tab
+local MiscTab = Window:AddTab({ Title = "Misc", Icon = "cog" })
+local ScriptsSection = MiscTab:AddSection("Scripts")
+
+-- Function to create buttons with a common structure
+local function createScriptButton(section, title, description, scriptUrl)
+    section:AddButton({
+        Title = title,
+        Description = description,
+        Callback = function()
+            loadstring(game:HttpGet(scriptUrl))()
+        end,
+        Menu = {
+            {
+                Title = "Copy to Clipboard",
+                Action = function()
+                    setclipboard(scriptUrl)
+                    Fluent:Notify({
+                        Title = "Copied!",
+                        Content = scriptUrl .. " has been copied to clipboard.",
+                        Duration = 5
+                    })
+                end
+            }
+        }
+    })
+end
+
+-- Button 1: SonicTuru ChestFarmOp
+createScriptButton(ScriptsSection, "SonicTuru ChestFarm", "Chest farm script for SonicTuru", "https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp")
+-- Button 2: ThunderZ HUB AllDevice
+createScriptButton(ScriptsSection, "ThunderZ CHEST FARM", "All Device script for ThunderZ HUB chest", "https://raw.githubusercontent.com/ThunderZ-05/HUB/main/Main/Chest/AllDevice.lua")
+
+MiscTab:AddButton({
+    Title = "Kick Yourself",
+    Description = "Kick yourself from the game",
+    Callback = function()
+        game.Players.LocalPlayer:Kick("You kicked yourself.")
+    end
+})
+
+local AimSection = MiscTab:AddSection("Aim")
+
+-- Create Aimbot toggle
+local AimbotToggle = AimSection:AddToggle("Aimbot", { Title = "Aimbot", Default = false })
+
+-- Function to find the nearest player to the local player
+local function getNearestPlayer()
+    local localPlayer = game.Players.LocalPlayer
+    local playerList = game.Players:GetPlayers()
+
+    local nearestPlayer, nearestDistance = nil, math.huge
+
+    for _, player in pairs(playerList) do
+        if player ~= localPlayer then
+            local distance = (player.Character.HumanoidRootPart.Position - localPlayer.Character.HumanoidRootPart.Position).Magnitude
+            if distance < nearestDistance then
+                nearestPlayer = player
+                nearestDistance = distance
+            end
+        end
+    end
+
+    return nearestPlayer
+end
+
+-- Connect toggle change event
+AimbotToggle:OnChanged(function()
+    if AimbotToggle.Value then
+        while AimbotToggle.Value do
+            wait(0.1) -- Adjust the delay if needed
+
+            local nearestPlayer = getNearestPlayer()
+
+            if nearestPlayer then
+                -- Aim at the player's head
+                local headPosition = nearestPlayer.Character.Head.Position
+                game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):Move(headPosition)
+            end
+        end
+    end
+end)
+
+local FpsPingSection = MiscTab:AddSection("FPS and Ping")
+
+-- Create a text label for displaying FPS and Ping
+local FpsPingLabel = FpsPingSection:AddTextLabel({
+    Text = "FPS: 0\nPing: 0ms",
+})
+
+-- Function to update FPS and Ping
+local function updateFpsPing()
+    local fps = math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
+    local ping = game.Players.LocalPlayer:Ping()
+
+    FpsPingLabel:SetText("FPS: " .. fps .. "\nPing: " .. ping .. "ms")
+end
+
+-- Connect update function to RenderStepped
+game:GetService("RunService").RenderStepped:Connect(updateFpsPing)
+
+-- Add Settings Tab
+local Settings = Window:AddTab({ Title = "UI Settings", Icon = "cog" })
+
+-- Addons
+SaveManager:SetLibrary(Fluent)
+InterfaceManager:SetLibrary(Fluent)
+-- Build interface and configs
+InterfaceManager:BuildInterfaceSection(Settings)
+SaveManager:BuildConfigSection(Settings)
+
+Window:SelectTab(1)
+
+Fluent:Notify({
+    Title = "Bloxy Script Executor",
+    Content = "Script loaded successfully.",
+    Duration = 8
+})
